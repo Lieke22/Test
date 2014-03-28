@@ -42,5 +42,10 @@ group :test, :development do
   gem 'factory_girl'
   gem 'factory_girl_rails'
   gem 'faker'
+  gem 'date_validator'
+end
 
+group :test do
+  gem 'shoulda'
+  gem 'shoulda-matchers'
 end

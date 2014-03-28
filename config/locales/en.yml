@@ -3,3 +3,10 @@
 
 en:
   hello: "Hello world"
+  activerecord:
+    errors:
+      models:
+        studentgrade:
+          attributes:
+            date:
+              before: "Hee, datum is verkeerd"

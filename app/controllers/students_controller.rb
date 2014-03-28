@@ -2,7 +2,9 @@ class StudentsController < ApplicationController
   # GET /students
   # GET /students.json
   def index
-    @students = Student.all
+    #Rails.logger.info "in index"
+    @students = Student.includes(:studentgrades).all
+    #Rails.logger.info "after @students assignment"
 
     respond_to do |format|
       format.html # index.html.erb
